@@ -1,4 +1,5 @@
 package com.reactnativecommunity.slider;
+// FIXME package name is incorrect
 
 import android.content.Context;
 import android.view.View;
@@ -108,19 +109,19 @@ public class ReactSliderManager extends SimpleViewManager<ReactSlider> implement
 
   @Override
   @ReactProp(name = "minimumValue", defaultFloat = 0f)
-  public void setMinimumValue(ReactSlider view, double value) {
+  public void setMinimumValue(ReactSlider view, float value) {
     ReactSliderManagerImpl.setMinimumValue(view, value);
   }
 
   @Override
   @ReactProp(name = "maximumValue", defaultFloat = 0f)
-  public void setMaximumValue(ReactSlider view, double value) {
+  public void setMaximumValue(ReactSlider view, float value) {
     ReactSliderManagerImpl.setMaximumValue(view, value);
   }
 
   @Override
   @ReactProp(name = "step", defaultFloat = 0f)
-  public void setStep(ReactSlider view, double value) {
+  public void setStep(ReactSlider view, float value) {
     ReactSliderManagerImpl.setStep(view, value);
   }
 
